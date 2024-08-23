@@ -12,15 +12,15 @@ function Footer() {
          </div>
           <div className="col-6 col-md-2 d-flex align-items-center">
           <FaPhoneAlt/>
-            <p className="ms-2">+91 1234567890</p>
+            <p className="ms-2">+91 98832 39466</p>
           </div>
           <div className="col-6 col-md-2 d-flex align-items-center">
           <FaWhatsapp/>
-            <p className="ms-2">+91 1234567890</p>
+            <p className="ms-2">+91 98832 39466</p>
           </div>
           <div className="col-6 col-md-2 d-flex align-items-center">
           <MdEmail/>
-            <p className="ms-2">+91 1234567890</p>
+            <p className="ms-2">sarojininursing21@gmail.com</p>
           </div>
         </div>
 
