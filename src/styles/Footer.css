@@ -1,0 +1,131 @@
+/* Footer.css */
+
+/* General Reset for Body and HTML to avoid unwanted padding/margin issues */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Footer Styling */
+  .footer-logo {
+    width: 150px;
+  }
+  
+  .footer-img {
+    width: 100px;
+  }
+  
+  /* Padding and Margin Adjustment for Containers */
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  /* Adjust footer elements for small screens */
+  @media (max-width: 576px) {
+    .footer-logo {
+      width: 100px;
+    }
+  
+    .footer-img {
+      width: 80px;
+    }
+  
+    /* Ensure full width on small screens with small margins */
+    .footer p {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 100% !important;
+    }
+  }
+  
+  /* Medium Devices (Tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .footer-logo {
+      width: 130px;
+    }
+  
+    .footer-img {
+      width: 90px;
+    }
+  
+    /* Ensure container adapts well without extra padding and adds controlled margin */
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  
+    .footer p {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  
+  /* Large Devices (Desktops) */
+  @media (min-width: 769px) {
+    .footer-logo {
+      width: 150px;
+    }
+  
+    .footer-img {
+      width: 100px;
+    }
+  
+    /* Ensure full-width layout on large screens but keep the margin for breathing space */
+    .container {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 20px;
+      margin-right: 20px;
+      max-width: 100% !important;
+    }
+  
+    .footer p {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
+  /* Extra Large Devices (Very large screens) */
+  @media (min-width: 1200px) {
+    .footer-logo {
+      width: 160px;
+    }
+  
+    .footer-img {
+      width: 110px;
+    }
+  
+    /* Keep content aligned with proper margins */
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  
+    .footer p {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+  

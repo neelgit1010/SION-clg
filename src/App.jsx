@@ -1,4 +1,3 @@
-import './App.css'
 import Admission from './Components/Admission'
 import Courses from './Components/Courses'
 import Facilities from './Components/Facilities'
@@ -8,6 +7,7 @@ import Navbar from "./Components/Navbar"
 import Organizations from './Components/Organizations'
 import Testinominal from './Components/Testinominal'
 import Welcome from './Components/Welcome'
+import './App.css'
 
 function App() {
 

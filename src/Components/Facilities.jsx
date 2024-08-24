@@ -1,4 +1,5 @@
 import Card from "./Card";
+import '../styles/Facilities.css';
 
 function Facilities() {
   const cards = [

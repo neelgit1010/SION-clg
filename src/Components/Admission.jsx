@@ -1,61 +1,94 @@
+import React from "react";
+import "../styles/Admission.css"; // Add CSS for custom styles if needed
+
 function Admission() {
   return (
-    <div className="container d-flex mt-5">
-      {/* Pics */}
-      <div>
-        <img src="/Static/Rectangle-25.png" alt="" className="d-block" />
-        <img src="/Static/Rectangle-45.png" alt="" className="mt-5" />
-      </div>
-      <div className="container ms-5" style={{ backgroundColor: "#133B7A" }}>
-        <h1 className="text-center text-white mt-5">
-          Online Admission Queries
-        </h1>
-        <form action="">
-        <div className="container mt-5 text-white">
-          <h3>Name</h3>
-          <textarea
-            name="name"
-            id="name"
-            cols="80"
-            rows="3"
-            className="mb-5"
-          ></textarea>
-          <h3>Mobile NO.</h3>
-          <textarea
-            name="mobile"
-            id="mobile"
-            cols="80"
-            rows="3"
-            className="mb-5"
-          ></textarea>
-          <h3>Course</h3>
-          <textarea
-            name="course"
-            id="course"
-            cols="80"
-            rows="3"
-            className="mb-5"
-          ></textarea>
-          <h3>District</h3>
-          <textarea
-            name="district"
-            id="district"
-            cols="80"
-            rows="3"
-            className="mb-5"
-          ></textarea>
-          <h3>Message</h3>
-          <textarea
-            name="message"
-            id="message"
-            cols="80"
-            rows="3"
-            className="mb-5"
-          ></textarea>
+    <div className="container mt-5">
+      <div className="row">
+        {/* Images Section */}
+        <div className="col-md-6 mb-4">
+          <img
+            src="/Static/Rectangle-25.png"
+            alt="Admission Image"
+            className="img-fluid mb-4"
+          />
+          <img
+            src="/Static/Rectangle-45.png"
+            alt="Admission Image"
+            className="img-fluid"
+          />
         </div>
-        <button className="btn btn-primary w-100 mt-3 p-3 fs-5" style={{backgroundColor: "#F8193F"}}>Submit</button>
-        </form>
-        <button className="btn btn-primary w-100 mt-5 p-3 fs-5">Download Placement report</button>
+
+        {/* Form Section */}
+        <div className="col-md-6 bg-primary text-white p-4 admission-form">
+          <h1 className="text-center mt-4 mb-4">Online Admission Queries</h1>
+          <form>
+            <div className="mb-3">
+              <label htmlFor="name" className="form-label fs-5">
+                Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="mobile" className="form-label fs-5">
+                Mobile No.
+              </label>
+              <input
+                type="tel"
+                className="form-control"
+                id="mobile"
+                placeholder="Enter your mobile number"
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="course" className="form-label fs-5">
+                Course
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="course"
+                placeholder="Enter your course"
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="district" className="form-label fs-5">
+                District
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="district"
+                placeholder="Enter your district"
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="message" className="form-label fs-5">
+                Message
+              </label>
+              <textarea
+                className="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="btn btn-danger w-100 fs-5 p-3 mb-3"
+            >
+              Submit
+            </button>
+          </form>
+          <button className="btn btn-primary w-100 fs-5 p-3 mt-4">
+            Download Placement Report
+          </button>
+        </div>
       </div>
     </div>
   );

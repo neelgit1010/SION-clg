@@ -1,0 +1,61 @@
+/* Navbar.css */
+.navbar {
+    padding: 0 1rem; /* Padding for the navbar */
+  }
+  
+  .navbar-logo {
+    width: 120px;
+  }
+  
+  /* Media queries for responsive logo size */
+  @media (max-width: 1200px) {
+    .navbar-logo {
+      width: 100px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-logo {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo {
+      width: 60px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-logo {
+      width: 50px;
+    }
+  
+    /* Optional: Adjust button size on small screens */
+    .btn-danger {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Center align the navigation menu items */
+  .navbar-nav {
+    margin: 0 auto; /* Center align navbar items */
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    width: 100%;
+  }
+  
+  .offcanvas-body {
+    padding: 1rem; /* Add padding inside the offcanvas menu */
+  }
+  
+  .offcanvas-header {
+    padding: 1rem; /* Add padding to offcanvas header */
+  }
+  
+  .btn-danger {
+    max-width: 300px; /* Set a max width for the button to prevent it from stretching too much */
+    margin: 0 auto; /* Center button in the offcanvas menu */
+  }
+  

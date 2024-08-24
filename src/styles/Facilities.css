@@ -1,0 +1,122 @@
+/* General Reset for Body and HTML to avoid unwanted padding/margin issues */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Facilities Section */
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .facilities-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .facilities-heading {
+    color: #0E4EB2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Styling */
+  .facilities-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .facilities-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .facilities-card h3 {
+    color: #333;
+    font-size: 1.25rem;
+  }
+  
+  .facilities-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Media Queries */
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 576px) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .facilities-container {
+      gap: 15px;
+    }
+  
+    .facilities-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .facilities-card {
+      width: 48%;
+    }
+  
+    .facilities-container {
+      gap: 20px;
+    }
+  }
+  
+  /* Large Screens (Laptops, Desktops) */
+  @media (min-width: 769px) {
+    .container {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .facilities-card {
+      width: 30%;
+    }
+  
+    .facilities-container {
+      gap: 25px;
+    }
+  }
+  
+  /* Extra Large Screens */
+  @media (min-width: 1200px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .facilities-container {
+      gap: 30px;
+    }
+  
+    .facilities-card {
+      width: 28%;
+    }
+  }
+  
